@@ -352,6 +352,7 @@ int main() {
             cout << e << endl;
             prefix_expr a( "0" );
             arr[get_container_index( cmd_l.col[1][0] )] = new expr_tree( a );
+            arr[get_container_index( cmd_l.col[1][0] )]->set_var_list( var_list );
             cin.get();
 
         } catch( command_exception e ) {
